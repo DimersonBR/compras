@@ -1,0 +1,132 @@
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Container principal que organiza os elementos em duas colunas */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Estilo para o catálogo de produtos */
+.catalogo {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.catalogo h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.catalogo ul {
+    list-style-type: none;
+}
+
+.catalogo ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo para o carrinho de compras */
+.carrinho {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrinho h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.carrinho ul {
+    list-style-type: none;
+}
+
+.carrinho ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botão de finalizar compra */
+#finalizarCompraBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#finalizarCompraBtn:hover {
+    background-color: #a5c6ac;
+}
+
+/* Estilo geral para os botões */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Botão "Adicionar ao Carrinho" */
+button.adicionar {
+    background-color: #007bff;
+    color: white;
+    margin-left: 20px;
+}
+
+button.adicionar:hover {
+    background-color: #0056b3;
+}
+
+/* Botão "Remover" */
+button.remover {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+button.remover:hover {
+    background-color: #c82333;
+}
+
+/* Estilização adicional para a lista de produtos e carrinho */
+#listaProdutos li, #carrinhoCompras li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
